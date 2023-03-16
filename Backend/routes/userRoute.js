@@ -8,13 +8,6 @@ router.get("/", (req, res) => {
 })
 
 
-
-// router.post("/signup", (req, res, next) => {
-//     console.log(req.body.name)
-//     res.status(200).send("User Signup successfully");
-// })
-
-
 router.post("/signup", async (req, res, next) => {
     try {
         const { name, email, password } = req.body;
